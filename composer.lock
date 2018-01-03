@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e1fea8de07669b8fe77ede19ee9809e",
+    "content-hash": "c2bfcbd1627fc54a2053ee9a21426dea",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1352,6 +1352,62 @@
             "time": "2017-12-04T18:33:55+00:00"
         },
         {
+            "name": "symfony/asset",
+            "version": "v4.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/asset.git",
+                "reference": "3f5117a59af74dd3cecf3ebc70d1e35478ae2d01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/asset/zipball/3f5117a59af74dd3cecf3ebc70d1e35478ae2d01",
+                "reference": "3f5117a59af74dd3cecf3ebc70d1e35478ae2d01",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "symfony/http-foundation": "~3.4|~4.0",
+                "symfony/http-kernel": "~3.4|~4.0"
+            },
+            "suggest": {
+                "symfony/http-foundation": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Asset\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Asset Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-11-07T14:45:01+00:00"
+        },
+        {
             "name": "symfony/cache",
             "version": "v4.0.2",
             "source": {
@@ -1917,16 +1973,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.0.53",
+            "version": "v1.0.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "cc4b1bac464597ce220d4f8208c38c75195e80c2"
+                "reference": "73423de7560c492f159aeb3eb9687b470bc87aec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/cc4b1bac464597ce220d4f8208c38c75195e80c2",
-                "reference": "cc4b1bac464597ce220d4f8208c38c75195e80c2",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/73423de7560c492f159aeb3eb9687b470bc87aec",
+                "reference": "73423de7560c492f159aeb3eb9687b470bc87aec",
                 "shasum": ""
             },
             "require": {
@@ -1959,7 +2015,7 @@
                     "email": "fabien.potencier@gmail.com"
                 }
             ],
-            "time": "2017-12-27T16:06:01+00:00"
+            "time": "2018-01-03T11:28:30+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -3183,16 +3239,16 @@
         },
         {
             "name": "symfony/thanks",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/thanks.git",
-                "reference": "f3e567198cbac9dbec5baf9004f1e51fecc82c79"
+                "reference": "b637913a92664571afd1067fc645ecb30c9cf5b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/thanks/zipball/f3e567198cbac9dbec5baf9004f1e51fecc82c79",
-                "reference": "f3e567198cbac9dbec5baf9004f1e51fecc82c79",
+                "url": "https://api.github.com/repos/symfony/thanks/zipball/b637913a92664571afd1067fc645ecb30c9cf5b2",
+                "reference": "b637913a92664571afd1067fc645ecb30c9cf5b2",
                 "shasum": ""
             },
             "require": {
@@ -3221,7 +3277,8 @@
                     "email": "p@tchwork.com"
                 }
             ],
-            "time": "2017-12-20T21:36:05+00:00"
+            "description": "Give thanks (in the form of a GitHub ⭐) to your fellow PHP package maintainers (not limited to Symfony components)!",
+            "time": "2018-01-03T09:30:52+00:00"
         },
         {
             "name": "symfony/var-dumper",

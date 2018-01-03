@@ -13,6 +13,7 @@ Encore
     // uncomment to define the assets of the project
     .addEntry('scripts','./assets/js/bootstrap.min.js')
     .addStyleEntry('styles','./assets/css/bootstrap.min.css')
+    .addStyleEntry('font','./assets/css/font-awesome.min.css')
     // .addStyleEntry('bootstrap','./css/assets/bootstrap.min.css')
 
     // empty the outputPath dir before each build
@@ -25,7 +26,7 @@ Encore
     // .enableSassLoader()
 
     // uncomment for legacy applications that require $/jQuery as a global variable
-    // .autoProvidejQuery()
+    .autoProvidejQuery()
 ;
 
 module.exports = Encore.getWebpackConfig();
