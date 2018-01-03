@@ -20,6 +20,14 @@ class PageController extends Controller
      */
     public function index(){
 
-        return $this->render('indexPage.html.twig');
+        return $this->render('Page/indexPage.html.twig');
+    }
+
+    /**
+     * @Route("/about")
+     */
+    public function about(){
+
+        return $this->render('Page/indexPage.html.twig');
     }
 }

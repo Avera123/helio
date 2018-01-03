@@ -1,7 +1,7 @@
 /* Base */
 * {outline:none;}
 html, body {height: 100%;}
-body {font-family: 'Open Sans', sans-serif;font-size: 3px;line-height: 1.6;color: #8c8c8c;background-color: #fff;}
+body {font-family: 'Roboto', sans-serif;font-size: 16px;line-height: 1.6;color: #8c8c8c;background-color: #fff;}
 h1, h2, h3, h4, h5, h6 {font-family: 'Open Sans', sans-serif;}
 a {color: #404040;}
 a:hover {color: #404040;transition-property: all;transition-duration: 0.3s;transition-timing-function: linear;}
@@ -85,7 +85,7 @@ h2.section-title {text-align: center;color: #404040;}
 .thumbnail .caption {padding: 9px;color: #404040;padding-left: 0;padding-right: 0;}
 .home_list h3 {font-size: 16px;font-weight: 600;margin-top: 10px;margin-bottom: 10px;color: #404040;}
 .home_list p {color:#8c8c8c}
-.home_list a.btn {font-size: 13px;padding: 0;color: #005FA6;}
+.home_list a.btn {font-size: 13px;padding: 0;color: #005FA6; text-decoration: none; font-weight: bold; }
 .home_bottom .row {margin-left: -5px;margin-right: -5px;}
 .home_bottom div[class*="col-"] {padding-right: 5px;padding-left: 5px;position: relative;}
 
