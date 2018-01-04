@@ -70,7 +70,7 @@ a.none:hover {text-decoration: none;}
 .boxes_area h3 {font-size: 16px;font-weight: 500;margin-top: 0;margin-bottom: 18px;}
 .services {padding-top: 50px;padding-bottom: 50px;}
 h2.section-title {text-align: center;color: #404040;}
-.services p.desc {text-align: center;font-size: 13px;margin-bottom: 20px;}
+.services p.desc {text-align: justify;font-size: 13px;margin: 1% 19%;}
 .services .media {margin-top: 30px;}
 .services .media i {font-size: 45px;color: #005FA6;}
 .services .media h4 {font-size: 15px;font-weight: 600;color: #404040;}

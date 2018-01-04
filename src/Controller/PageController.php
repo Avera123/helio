@@ -16,7 +16,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class PageController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/index", name="inicio")
      */
     public function index(){
 
