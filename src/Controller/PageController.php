@@ -19,7 +19,6 @@ class PageController extends Controller
      * @Route("/index", name="inicio")
      */
     public function index(){
-
         return $this->render('Page/indexPage.html.twig');
     }
 
@@ -27,7 +26,6 @@ class PageController extends Controller
      * @Route("/about")
      */
     public function about(){
-
         return $this->render('Page/indexPage.html.twig');
     }
 }

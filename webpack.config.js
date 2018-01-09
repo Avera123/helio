@@ -14,10 +14,13 @@ Encore
     .addStyleEntry('bootstrapcss','./assets/css/bootstrap.min.css')
     .addStyleEntry('font','./assets/css/font-awesome.min.css')
     .addStyleEntry('style','./assets/style.css')
+    .addStyleEntry('animate','./assets/animate-it/css/animations.css')
+    .addStyleEntry('animate-ie','./assets/animate-it/css/animations-ie-fix.css')
     // uncomment to define the assets of the project
     .addEntry('jquery','./assets/js/jquery.min.js')
     .addEntry('bootstrapjs','./assets/js/bootstrap.min.js')
     .addEntry('slider','./assets/js/slider.js')
+    .addEntry('animatejs','./assets/animate-it/js/css3-animate-it.js')
 
     // empty the outputPath dir before each build
     .cleanupOutputBeforeBuild()
