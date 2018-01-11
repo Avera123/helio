@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block title %}Inicio - AppSoga{% endblock %}
+{% block body %}
+    {% include('menu.html.twig') %}
+    {#<main class="site-main">#}
+    <div class="container-fluid">
+        <div class="container">
+        <div class="row">
+            <h1 style="text-align: center;">Contáctenos</h1>
+            <p>En <strong>SOGA APP</strong> es de vital importancia la comunicación con nuestros clientes, en esta sección podrá encontrar 3 métodos de acercamiento con los cuales
+                interactuar con el equipo de soporte de nuestra compañía, quienes através de una comunicación acertiva y excelente servicio al cliente, le apoyará y le brindará una
+            asesoría pertinente.</p>
+            <div class="col-lg-12">
+                <div class="col-lg-3"></div>
+
+            </div>
+        </div>
+        <div class="row animatedParent">
+                <div class="col-lg-8"></div>
+                <div class="col-lg-4 slow animated fadeIn" style="background-color: #efefef; border-radius: 5%;">
+                    <h3 class="slower animated bounceIn" style="color: #8c8c8c;">Formulario de contacto</h3>
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+                    <div class="clearfix"></div>
+                </div>
+        </div>
+        </div>
+    </div>
+    {#</main>#}
+    {% include('pie.html.twig') %}
+{% endblock %}

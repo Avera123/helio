@@ -33,6 +33,11 @@ class Contacto
     protected $correo;
 
     /**
+     * @ORM\Column(name="tipo", type="string", length=250, nullable=true)
+     */
+    protected $tipo;
+
+    /**
      * @ORM\Column(name="mensaje", type="string", length=250, nullable=true)
      */
     protected $mensaje;
@@ -99,6 +104,22 @@ class Contacto
     public function setCorreo ($correo): void
     {
         $this->correo = $correo;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTipo ()
+    {
+        return $this->tipo;
+    }
+
+    /**
+     * @param mixed $tipo
+     */
+    public function setTipo ($tipo): void
+    {
+        $this->tipo = $tipo;
     }
 
     /**
