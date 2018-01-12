@@ -17,12 +17,15 @@ Encore
     .addStyleEntry('animate','./assets/animate-it/css/animations.css')
     .addStyleEntry('animate-ie','./assets/animate-it/css/animations-ie-fix.css')
     .addStyleEntry('cardClient','./assets/css/sogacss/tarjetasClientes.css')
+    .addStyleEntry('teamCard','./assets/materialCards/dist/material-cards.css')
+    .addStyleEntry('teamCardH','./assets/materialCards/dist/material-cards-auto-height.css')
     // uncomment to define the assets of the project
     .addEntry('jquery','./assets/js/jquery.min.js')
     .addEntry('bootstrapjs','./assets/js/bootstrap.min.js')
     .addEntry('slider','./assets/js/slider.js')
     .addEntry('animatejs','./assets/animate-it/js/css3-animate-it.js')
     .addEntry('cardClientJs','./assets/js/sogajs/tarjetasClientes.js')
+    .addEntry('teamCards','./assets/materialCards/js/jquery.material-cards.js')
 
     // empty the outputPath dir before each build
     .cleanupOutputBeforeBuild()
