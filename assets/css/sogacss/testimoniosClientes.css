@@ -15,6 +15,11 @@
     text-align: center;
 }
 
+.mySlides>img{
+    width: 100px;
+    border-radius: 50%;
+}
+
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -47,8 +52,8 @@
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
-    padding: 20px;
-    background: #ddd;
+    padding: 10px;
+    background: #fff;
     /*background-color: transparent;*/
     margin-bottom: 15px;
 }

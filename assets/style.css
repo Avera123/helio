@@ -242,3 +242,13 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
     color: #fff;
     font-size: 40px;
 }
+
+/*
+Valores corporativos
+ */
+.row>.valores>img{
+    width: 60%;
+}
+.row>.valores{
+    text-align: center;
+}
