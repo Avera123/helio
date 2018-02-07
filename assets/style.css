@@ -18,6 +18,7 @@ a.none:hover {text-decoration: none;}
 .top li a:hover {text-decoration: none;}
 .top li a:hover,.top li a:hover i {color: #005FA6;transition-property: all;transition-duration: 0.3s;transition-timing-function: linear;}
 
+
 /* Navigation */
 .navbar {-moz-border-radius: 0;-webkit-border-radius: 0;border-radius: 0;margin-bottom: 0;}
 .navbar .container {position: relative;}
