@@ -20,6 +20,7 @@ Encore
     .addStyleEntry('teamCard','./assets/materialCards/dist/material-cards.css')
     .addStyleEntry('teamCardH','./assets/materialCards/dist/material-cards-auto-height.css')
     .addStyleEntry('testimoniosClientesCSS','./assets/css/sogacss/testimoniosClientes.css')
+    .addStyleEntry('sllider','./assets/sllider/slider.scss')
     // uncomment to define the assets of the project
     .addEntry('jquery','./assets/js/jquery.min.js')
     .addEntry('bootstrapjs','./assets/js/bootstrap.min.js')
@@ -28,6 +29,7 @@ Encore
     .addEntry('cardClientJs','./assets/js/sogajs/tarjetasClientes.js')
     .addEntry('teamCards','./assets/materialCards/js/jquery.material-cards.js')
     .addEntry('testimoniosClientesJS','./assets/js/sogajs/testimoniosClientes.js')
+    .addEntry('slliderjs','./assets/sllider/slider.js')
 
     // empty the outputPath dir before each build
     .cleanupOutputBeforeBuild()
@@ -36,7 +38,7 @@ Encore
     // .enableBuildNotifications()
 
     // uncomment if you use Sass/SCSS files
-    // .enableSassLoader()
+    .enableSassLoader()
 
     // uncomment for legacy applications that require $/jQuery as a global variable
     .autoProvidejQuery()
