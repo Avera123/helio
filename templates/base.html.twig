@@ -8,14 +8,14 @@
 
         {% block stylesheets %}
             {#<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">#}
-            <link rel="stylesheet" href="{{ asset('build/bootstrapcss.css') }}">
-            <link rel="stylesheet" href="{{ asset('build/font.css') }}">
-            <link rel="stylesheet" href="{{ asset('build/style.css') }}">
-            <link rel="stylesheet" href="{{ asset('build/animate.css') }}">
-            <link rel="stylesheet" href="{{ asset('build/animate-ie.css') }}">
-            <link rel="stylesheet" href="{{ asset('build/cardClient.css') }}">
-            <link rel="stylesheet" href="{{ asset('build/testimoniosClientesCSS.css') }}">
-            <link rel="stylesheet" href="{{ asset('build/sllider.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/css/font-awesome.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/style.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/animate-it/css/animations.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/animate-it/css/animations-ie-fix.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/css/sogacss/tarjetasClientes.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/css/sogacss/testimoniosClientes.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/build/sllider.css') }}">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         {% endblock %}
         <!--[if lt IE 9]>
@@ -28,13 +28,13 @@
 
         {% endblock %}
         {% block javascripts %}
-            <script src="{{ asset('build/jquery.js') }}"></script>
-            <script src="{{ asset('build/bootstrapjs.js') }}"></script>
-            <script src="{{ asset('build/slider.js') }}"></script>
-            <script src="{{ asset('build/animatejs.js') }}"></script>
-            <script src="{{ asset('build/cardClientJs.js') }}"></script>
-            <script src="{{ asset('build/testimoniosClientesJS.js') }}"></script>
-            <script src="{{ asset('build/slliderjs.js') }}"></script>
+            <script src="{{ asset('/helio/public/assets/js/jquery.min.js') }}"></script>
+            <script src="{{ asset('/helio/public/assets/js/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('/helio/public/assets/js/slider.js') }}"></script>
+            <script src="{{ asset('/helio/public/assets/animate-it/js/css3-animate-it.js') }}"></script>
+            <script src="{{ asset('/helio/public/assets/js/sogajs/tarjetasClientes.js') }}"></script>
+            <script src="{{ asset('/helio/public/assets/js/sogajs/testimoniosClientes.js') }}"></script>
+            <script src="{{ asset('/helio/public/assets/sllider/slider.js') }}"></script>
         {% endblock %}
     </body>
 </html>
