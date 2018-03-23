@@ -248,7 +248,7 @@ ul.big li:nth-child(2n) {margin-left: 2%;}
 Valores corporativos
  */
 .row>.valores>img{
-    width: 60%;
+    width: 35%;
 }
 .row>.valores{
     text-align: center;
