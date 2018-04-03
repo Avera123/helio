@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block title %}Inicio - AppSoga{% endblock %}
+{% block body %}
+    {% include('menu.html.twig') %}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <h1 style="text-align: center;">Nuestros Productos</h1><br>
+                <div class="col-md-12">
+                    <p>Nuestro software cumple con las espectativas tanto técnicas como lógicas según la estrategia de negocio de cada uno de los clientes lo que lo hace
+                    realmente modelable, acoplable y portable a cualquier entorno.<br>Las características propias del software se describen en el siguiente apartado.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <h1 style="text-align: center;">Características</h1><br>
+                <div class="col-md-4 valores">
+                    <img src="/helio/public/img/valores/calidad.png" class="imgVal" style="width: 35%;"/>
+                    <h4>Portabilidad</h4>
+                    <p>La calidad en los servicios informáticos, es el compromiso que caracteriza la acción de las
+                        personas que componen a APP SOGA SAS.
+                        Calidad en el diseño, en los procesos, en los procedimientos y en la gestión total tanto interna
+                        como externa.</p>
+                </div>
+                <div class="col-md-4 valores">
+                    <img src="/helio/public/img/valores/transparencia.png" class="imgVal" style="width: 35%;"/>
+                    <h4>Rendimiento</h4>
+                    <p>Somos una compañía que modela y diseña software con el mejor estándar de calidad para nuestros
+                        clientes,
+                        con el objetivo de mejorar su efectividad en sus procesos, la operación y la competitividad en
+                        todo el territorio nacional.</p>
+                </div>
+                <div class="col-md-4 valores">
+                    <img src="/helio/public/img/valores/trabajoenequipo.png" class="imgVal" style="width: 35%;"/>
+                    <h4>Modulabilidad</h4>
+                    <p>Con el aporte de todos los que intervienen en los diferentes procesos de APP SOGA SAS buscamos el
+                        logro de los objetivos organizacionales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include('pie.html.twig') %}
+{% endblock %}

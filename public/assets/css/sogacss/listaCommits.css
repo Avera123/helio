@@ -1,0 +1,141 @@
+/*!**{*!*/
+/*!*-webkit-box-sizing: border-box;*!*/
+/*!*-moz-box-sizing: border-box;*!*/
+/*!*box-sizing: border-box;*!*/
+/*!*}*!*/
+
+/*!*html, body{*!*/
+/*!*background-color:#F2F2F2;*!*/
+/*!*font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;*!*/
+/*!*margin:0;*!*/
+/*!*padding:0;*!*/
+/*!*height:100%;*!*/
+/*!*width:100%;*!*/
+/*!*text-align:center;*!*/
+/*!*color:#404040;*!*/
+/*!*position:relative;*!*/
+/*!*}*!*/
+
+/*!*a{*!*/
+/*!*-webkit-transition: all 0.3s ease;*!*/
+/*!*-moz-transition: all 0.3s ease;*!*/
+/*!*-o-transition: all 0.3s ease;*!*/
+/*!*transition: all 0.3s ease;*!*/
+/*!*}*!*/
+
+/*.wrapperCommit {*/
+    /*width: 450px;*/
+    /*margin: 30px auto 0;*/
+    /*background-color: #FFFFFF;*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+/*}*/
+
+/*.headerCommit {*/
+    /*text-align: center;*/
+    /*width: 100%;*/
+    /*!*padding: 10px;*!*/
+    /*margin-bottom: 10px;*/
+    /*background-color: #5DBA9D;*/
+/*}*/
+
+/*.headerCommit a {*/
+    /*font-size: 20px;*/
+    /*color: #FFFFFF;*/
+    /*width: 40px;*/
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    /*margin-left: 10px;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+/*}*/
+
+/*.headerCommit a:hover, .list-mode .headerCommit a.hide-list:hover {*/
+    /*background-color: #11956c;*/
+/*}*/
+
+/*.headerCommit a.hide-list {*/
+    /*background-color: #11956c;*/
+/*}*/
+
+/*.list-mode .headerCommit a.hide-list {*/
+    /*background-color: #5DBA9D;*/
+/*}*/
+
+/*.list-mode .headerCommit a.show-list {*/
+    /*background-color: #11956c;*/
+/*}*/
+
+/*.containerCommits:after {*/
+    /*content: "";*/
+    /*clear: both;*/
+    /*display: table;*/
+/*}*/
+
+/*.containerCommits {*/
+    /*padding: 10px 0 10px 10px;*/
+/*}*/
+
+/*.wrapperCommit .box {*/
+    /*float: left;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*margin: 0 10px 10px 0;*/
+    /*background-color: #CCCCCC;*/
+    /*-webkit-transition: all 1.0s ease;*/
+    /*-moz-transition: all 1.0s ease;*/
+    /*transition: all 1.0s ease;*/
+/*}*/
+
+/*.wrapperCommit.list-mode .containerCommits {*/
+    /*padding-right: 10px;*/
+/*}*/
+
+/*.wrapperCommit.list-mode .box {*/
+    /*width: 100%;*/
+/*}*/
+
+.panel-heading a.toggle > .right-arrow:before {
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+    font-size: 18px;
+
+@include single-transition(all, 0.5s, ease, 0);
+}
+.panel-heading a.collapsed.toggle .right-arrow:before {
+
+    content:"\f067";
+}
+.panel-heading a:hover,
+.panel-heading a:active,
+.panel-heading a:focus  {
+    text-decoration:none;
+}
+.panel-heading .state-map,
+.panel-heading h4,
+.panel-heading .right-arrow {
+    padding-top: 5px;
+}
+
+.state-map {
+    padding-top: 5px;
+    text-align: left;
+}
+.state-map img {
+    width: 50px;
+}
+.state-title {
+    padding-top: 3px;
+    text-align: left;
+}
+.state-link {
+    padding: 5px 10px 5px 0;
+    text-align: center;
+
+}
+.state-link i {
+    color: #000;
+    text-decoration: normal;
+}

@@ -17,7 +17,9 @@ class ContactoType extends AbstractType
     {
         $builder
             ->add('nombre', TextType::class)
-            ->add('telefono', TextType::class)
+            ->add('telefono', TextType::class,array(
+                'label' => 'Teléfono'
+            ))
             ->add('correo', TextType::class)
             ->add('tipo', ChoiceType::class, array(
                 'choices'  => array(

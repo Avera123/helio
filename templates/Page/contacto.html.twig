@@ -5,28 +5,220 @@
     {#<main class="site-main">#}
     <div class="container-fluid">
         <div class="container">
-        <div class="row">
-            <h1 style="text-align: center;">Contáctenos</h1>
-            <p>En <strong>SOGA APP</strong> es de vital importancia la comunicación con nuestros clientes, en esta sección podrá encontrar 3 métodos de acercamiento con los cuales
-                interactuar con el equipo de soporte de nuestra compañía, quienes através de una comunicación acertiva y excelente servicio al cliente, le apoyará y le brindará una
-            asesoría pertinente.</p>
-            <div class="col-lg-12">
-                <div class="col-lg-3"></div>
+            <div class="row">
+                <h1 style="text-align: center;">Contáctenos</h1>
+                <p style="text-align: justify;">En <strong>SOGA APP</strong> es de vital importancia la comunicación con nuestros clientes, en esta
+                    sección podrá encontrar 3 métodos de acercamiento con los cuales
+                    interactuar con el equipo de soporte de nuestra compañía, quienes através de una comunicación
+                    acertiva y excelente servicio al cliente, le apoyará y le brindará una
+                    asesoría pertinente.</p>
+                <div class="col-lg-12">
+                    <div class="col-lg-3"></div>
 
+                </div>
             </div>
-        </div>
-        <div class="row animatedParent">
-                <div class="col-lg-8"></div>
-                <div class="col-lg-4 slow animated fadeIn" style="background-color: #efefef; border-radius: 5%;">
+            <div class="row animatedParent">
+                <div class="col-lg-8">
+                    <div id="map" style="width: 100%; height: 533px;"></div>
+                </div>
+                <div class="col-lg-4 slow animated fadeIn" style="background-color: #efefef; border-radius: 1%;">
                     <h3 class="slower animated bounceIn" style="color: #8c8c8c;">Formulario de contacto</h3>
                     {{ form_start(form) }}
                     {{ form_widget(form) }}
                     {{ form_end(form) }}
                     <div class="clearfix"></div>
                 </div>
-        </div>
+            </div><br>
         </div>
     </div>
     {#</main>#}
     {% include('pie.html.twig') %}
+{% endblock %}
+{% block javascripts %}
+    parent();
+    <script>
+        var marker;
+        function initMap() {
+            var AppSoga = {lat: 6.245403, lng: -75.606177};
+            var styledMapType = new google.maps.StyledMapType(
+                [
+                    {
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#f5f5f5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#bdbdbd"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#eeeeee"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#757575"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dadada"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#616161"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e5e5e5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.station",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#eeeeee"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#c9c9c9"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#9e9e9e"
+                            }
+                        ]
+                    }
+                ]
+            );
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: AppSoga
+            });
+            var pin = '{{ asset('/helio/public/img/PinMarker.png') }}';
+            var marker = new google.maps.Marker({
+                position: AppSoga,
+                map: map,
+                animation: google.maps.Animation.DROP,
+                icon: pin,
+                title: 'Llámanos y danos el gusto de atenderte.\n' + 'Teléfono: +(57)(4) 322 0771\n' + 'Correo de Contacto: servicioalcliente@appsoga.com'
+            });
+            // map.mapTypes.set('styled_map', styledMapType);
+            // map.setMapTypeId('styled_map');
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqvuf62uXxSFDspNOfrdVCOBnhOZ8K1zA&callback=initMap">
+    </script>
 {% endblock %}

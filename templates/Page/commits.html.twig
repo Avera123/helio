@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+{% block title %}Inicio - AppSoga{% endblock %}
+{% block body %}
+    {% include('menu.html.twig') %}
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <h1 style="text-align: center;">Actualizaciones</h1><br>
+                <div class="col-md-12" style="text-align: justify;">
+                    <p>Nuestro software se actualiza cada instante con el fin de mantener los módulos en pleno funcionamiento y con la menor cantidad de errores posibles.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                        {% if commits is defined and commits|length > 0 %}
+                            {% for commit in commits  %}
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading1">
+                                        <div class="row">
+                                            <div class="col-xs-2 col-md-1 state-map">
+                                                <img src="{{ commit.committer.avatar_url }}" alt="WA" class="img-responsive" style="border-radius: 50%;width: 40px;" />
+                                            </div>
+                                            <div class="col-xs-9 col-md-10 state-title">
+                                                <h4 class="panel-title">{{ commit.commit.author.name }}</h4>
+                                            </div>
+                                            <div class="col-xs-1 state-link">
+                                                <a class="toggle" data-toggle="collapse" data-parent="#accordion" href="#{{ commit.sha }}" aria-expanded="true" aria-controls="collapse1">
+                                                    <i class="right-arrow"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="{{ commit.sha }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><strong>Fecha: </strong>{{ commit.commit.author.date|date('Y-m-d') }}</li>
+                                            <li class="list-group-item"><strong>Mensaje: </strong> {{ commit.commit.message }}</li>
+                                            {#<li class="list-group-item">Morbi leo risus</li>#}
+                                            {#<li class="list-group-item">Porta ac consectetur ac</li>#}
+                                            {#<li class="list-group-item">Vestibulum at eros</li>#}
+                                        </ul>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <h5>Sin Actualizaciones</h5>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include('pie.html.twig') %}
+{% endblock %}

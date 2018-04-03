@@ -4,7 +4,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-.btn {
+.btnS {
   display: inline-block;
   padding: 13px 20px;
   color: #fff;
@@ -37,9 +37,10 @@ body {
     transition:border 0.1s linear 0.05s;
   }
 
-  .btn-inner {
+  .btnS-inner {
     position: relative;
     z-index: 2;
+    text-decoration: none;
   }
 
   &:hover {
@@ -174,9 +175,10 @@ body {
       text-transform: uppercase;
     }
 
-    .btn {
+    .btnS {
       margin: 15px 0 0;
       border-color: #fff;
+      text-decoration: none;
 
       &::before {
         background:#fff
