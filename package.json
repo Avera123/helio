@@ -1,11 +1,13 @@
 {
   "devDependencies": {
     "@symfony/webpack-encore": "^0.17.1",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.6"
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.3",
+    "bourbon": "^5.0.0",
+    "compass": "^0.1.1",
     "jquery": "^3.2.1",
     "style.css": "^1.0.0-beta-1"
   },

@@ -267,3 +267,107 @@ body {
     }
   }
 }
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+//@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+//
+//*, *:before, *:after {
+//  margin: 0;
+//  padding: 0;
+//  box-sizing: border-box;
+//}
+//
+//html, body {
+//  height: 100vh;
+//}
+//
+//body {
+//  font: 14px/1 'Open Sans', sans-serif;
+//  color: #555;
+//  background: #eee;
+//}
+//
+//h1 {
+//  padding: 50px 0;
+//  font-weight: 400;
+//  text-align: center;
+//}
+//
+//p {
+//  margin: 0 0 20px;
+//  line-height: 1.5;
+//}
+
+.mainProductos {
+  width: 67%;
+  min-width: 320px;
+  //max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.sectionProductos {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+.inputProductos {
+  display: none;
+}
+
+.labelProductos {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 25px 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+.labelProductos:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 20px;
+}
+
+.labelProductos[for*='1']:before { content: '\f1cb'; }
+.labelProductos[for*='2']:before { content: '\f17d'; }
+.labelProductos[for*='3']:before { content: '\f16b'; }
+.labelProductos[for*='4']:before { content: '\f1a9'; }
+
+.labelProductos:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.inputProductos:checked + .labelProductos {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid #005FA6;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .labelProductos {
+    font-size: 0;
+  }
+  .labelProductos:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .labelProductos {
+    padding: 15px;
+  }
+}
