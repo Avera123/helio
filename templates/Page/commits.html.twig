@@ -20,24 +20,24 @@
                                     <div class="timeline__group">
                                         <span class="timeline__year">Actualizaciones recientes</span>
                                         {% if commits is defined and commits|length > 0 %}
-                                        {% for commit in commits %}
-                                        <div class="timeline__box">
-                                            <div class="timeline__date">
-                                                <span class="timeline__day">{{ commit.commit.author.date|date('d') }}</span>
-                                                <span class="timeline__month">{{ commit.commit.author.date|date('M') }}</span>
-                                            </div>
-                                            <div class="timeline__post">
-                                                <div class="timeline__content">
-                                                    <img src="{{ commit.committer.avatar_url }}" alt="WA"
-                                                         class="img-responsive"
-                                                         style="border-radius: 50%;width: 40px;"/><h3>{{ commit.commit.author.name }}</h3>
-                                                    <i style="color: #444444;">{{ commit.sha }}"</i><br>
-                                                    <p> {{ commit.commit.message }}
-                                                    </p>
+                                            {% for commit in commits %}
+                                                <div class="timeline__box">
+                                                    <div class="timeline__date">
+                                                        <span class="timeline__day">{{ commit.commit.author.date|date('d') }}</span>
+                                                        <span class="timeline__month">{{ commit.commit.author.date|date('M') }}</span>
+                                                    </div>
+                                                    <div class="timeline__post">
+                                                        <div class="timeline__content">
+                                                            <img src="{{ commit.committer.avatar_url }}" alt="WA"
+                                                                 class="img-responsive"
+                                                                 style="border-radius: 50%;width: 40px;"/>
+                                                            <h3>{{ commit.commit.author.name }}</h3>
+                                                            <i style="color: #444444;">{{ commit.sha }}</i><br>
+                                                            <p> {{ commit.commit.message }}</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        {% endfor %}
+                                            {% endfor %}
                                         {% else %}
                                             <h5>Sin Actualizaciones</h5>
                                         {% endif %}
@@ -52,9 +52,6 @@
             </div>
 
         </div>
-    </div>
-    <hr>
-    </div>
     </div>
     {% include('pie.html.twig') %}
 {% endblock %}
