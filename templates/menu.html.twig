@@ -24,13 +24,13 @@
                 <span class="sr-only">Toggle Navigation</span>
                 <i class="fa fa-bars"></i>
             </button>
-            <a href="index.html" class="navbar-brand">
+            <a href="{{ path('inicio') }}" class="navbar-brand">
                 <img src="{{ asset('/helio/public/img/logo.png') }}" alt="Logo Soga">
             </a>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                 <ul class="nav navbar-nav main-navbar-nav">
-                    <li class="{% if app.request.attributes.get('_route') == 'inicio' %}active{% endif %}"><a href="{{ path('inicio') }}" title="">INICIO</a></li>
+                    <li class="{% if app.request.attributes.get('_route') == 'inicio' %}active{% endif %}"><a href="{{ path('inicio') }}" title="Volver al Inicio">INICIO</a></li>
                     <li class="{% if app.request.attributes.get('_route') == 'quienes-somos' %}active{% endif %}"><a href="{{ path('quienes_somos') }}" title="">¿QUIENES SOMOS?</a></li>
                     {#<li class="{% if app.request.attributes.get('_route') == 'cliente' %}active{% endif %}"><a href="{{ path('cliente') }}" title="">CLIENTE</a></li>#}
                     <li class="{% if app.request.attributes.get('_route') == 'producto' %}active{% endif %}"><a href="{{ path('producto') }}" title="Productos">PRODUCTOS</a></li>
