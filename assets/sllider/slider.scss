@@ -324,16 +324,16 @@ body {
   border: 1px solid transparent;
 }
 
-.labelProductos:before {
-  font-family: fontawesome;
-  font-weight: normal;
-  margin-right: 20px;
-}
+//.labelProductos:before {
+//  font-family: fontawesome;
+//  font-weight: normal;
+//  margin-right: 20px;
+//}
 
-.labelProductos[for*='1']:before { content: '\f1cb'; }
-.labelProductos[for*='2']:before { content: '\f17d'; }
-.labelProductos[for*='3']:before { content: '\f16b'; }
-.labelProductos[for*='4']:before { content: '\f1a9'; }
+//.labelProductos[for*='1']:before { content: '\f1cb'; }
+//.labelProductos[for*='2']:before { content: '\f17d'; }
+//.labelProductos[for*='3']:before { content: '\f16b'; }
+//.labelProductos[for*='4']:before { content: '\f1a9'; }
 
 .labelProductos:hover {
   color: #888;
