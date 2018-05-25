@@ -72,13 +72,13 @@
 
 .screenRap .firewallTile {
     /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/firewallTile.jpg) no-repeat;*/
-    background: url('/helio/public/img/recursohumanogen.png') no-repeat;
+    background: url('/helio/public/img/programacionturnosgen.png') no-repeat;
     background-position: center;
 }
 
 .screenRap .backupTile {
     /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/backupTile.jpg) no-repeat;*/
-    background: url('/helio/public/img/recursohumanogen.png') no-repeat;
+    background: url('/helio/public/img/carteragen.png') no-repeat;
     background-position: center;
     animation: tileLoadScale .6s 2.2s forwards;
     -webkit-animation: tileLoadScale .6s 2.2s forwards;
@@ -87,13 +87,13 @@
 
 .screenRap .vulnerabilitiesTile {
     /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/vulnerableTile.jpg) no-repeat;*/
-    background: url('/helio/public/img/recursohumanogen.png') no-repeat;
+    background: url('/helio/public/img/inventariogen.png') no-repeat;
     background-position: center;
 }
 
 .screenRap .spamfilterTile {
     /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/spamfilterTile.jpg) no-repeat;*/
-    background: url('/helio/public/img/recursohumanogen.png') no-repeat;
+    background: url('/helio/public/img/contabilidadgen.png') no-repeat;
     background-position: center;
     animation: tileLoadScale .6s 2.7s forwards;
     -webkit-animation: tileLoadScale .6s 2.7s forwards;
@@ -109,26 +109,27 @@
     -moz-animation: tileLoadScale .6s 2s forwards;
 }
 
-.screenRap .tuneupTile {
-    /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/tuneupTile.jpg) no-repeat;*/
-    background: url('/helio/public/img/recursohumanogen.png') no-repeat;
-    background-position: center;
-}
 
-.screenRap .idpTile {
-    /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/idpTile.jpg) no-repeat;*/
-    background: url('/helio/public/img/recursohumanogen.png') no-repeat;
-    background-position: center;
-}
+/*.screenRap .tuneupTile {*/
+    /*!*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/tuneupTile.jpg) no-repeat;*!*/
+    /*background: url('/helio/public/img/recursohumanogen.png') no-repeat;*/
+    /*background-position: center;*/
+/*}*/
 
-.screenRap .parentalTile {
-    /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/parentalTile.jpg) no-repeat;*/
-    background: url('/helio/public/img/recursohumanogen.png') no-repeat;
-    background-position: center;
-    animation: tileLoadScale .6s 2.4s forwards;
-    -webkit-animation: tileLoadScale .6s 2.4s forwards;
-    -moz-animation: tileLoadScale .6s 2.4s forwards;
-}
+/*.screenRap .idpTile {*/
+    /*!*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/idpTile.jpg) no-repeat;*!*/
+    /*background: url('/helio/public/img/recursohumanogen.png') no-repeat;*/
+    /*background-position: center;*/
+/*}*/
+
+/*.screenRap .parentalTile {*/
+    /*!*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/parentalTile.jpg) no-repeat;*!*/
+    /*background: url('/helio/public/img/recursohumanogen.png') no-repeat;*/
+    /*background-position: center;*/
+    /*animation: tileLoadScale .6s 2.4s forwards;*/
+    /*-webkit-animation: tileLoadScale .6s 2.4s forwards;*/
+    /*-moz-animation: tileLoadScale .6s 2.4s forwards;*/
+/*}*/
 
 .feature {
     position: absolute;
@@ -210,36 +211,36 @@
 }
 
 .firewallFeature h2 {
-    background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/firewallIcon.png) left center no-repeat;
+    background: url('/helio/public/img/programacion-turno.png') left center no-repeat;
 }
 
 .backupFeature h2 {
-    background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/backupIcon.png) left center no-repeat;
+    background: url('/helio/public/img/cartera.png') left center no-repeat;
 }
 
 .vulnerabilitiesFeature h2 {
-    background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/vulnerabilitiesIcon.png) left center no-repeat;
+    background: url('/helio/public/img/inventario.png') left center no-repeat;
 }
 
 .spamfilterFeature h2 {
-    background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/spamfilterIcon.png) left center no-repeat;
+    background: url('/helio/public/img/contabilidad.png') left center no-repeat;
 }
 
 .smpFeature h2 {
     background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/smpIcon.png) left center no-repeat;
 }
 
-.tuneupFeature h2 {
-    background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/tuneupIcon.png) left center no-repeat;
-}
+/*.tuneupFeature h2 {*/
+    /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/tuneupIcon.png) left center no-repeat;*/
+/*}*/
 
-.idpFeature h2 {
-    background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/idpIcon.png) left center no-repeat;
-}
+/*.idpFeature h2 {*/
+    /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/idpIcon.png) left center no-repeat;*/
+/*}*/
 
-.parentalFeature h2 {
-    background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/parentalIcon.png) left center no-repeat;
-}
+/*.parentalFeature h2 {*/
+    /*background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/parentalIcon.png) left center no-repeat;*/
+/*}*/
 
 .hoverIcon {
     background: url(http://bullguard.com/marketingfiles/ext/umbracoLanding/demo/images/featureslist/mouseHoverIcon.png) center top no-repeat;
