@@ -19,16 +19,17 @@
             <link rel="stylesheet" href="{{ asset('/helio/public/assets/css/sogacss/caracteristicasProducto.css') }}">
             <link rel="stylesheet" href="{{ asset('/helio/public/assets/css/sogacss/testimoniosClientes.css') }}">
             <link rel="stylesheet" href="{{ asset('/helio/public/build/sllider.css') }}">
+            <link rel="stylesheet" href="{{ asset('/helio/public/assets/css/sogacss/modalInicial.css') }}">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         {% endblock %}
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+
     </head>
     <body>
         {% block body %}
-
         {% endblock %}
         {% block javascripts %}
             <script src="{{ asset('/helio/public/assets/js/jquery.min.js') }}"></script>
@@ -40,6 +41,49 @@
             <script src="{{ asset('/helio/public/assets/js/sogajs/caracteristicasProducto.js') }}"></script>
             <script src="{{ asset('/helio/public/assets/js/sogajs/testimoniosClientes.js') }}"></script>
             <script src="{{ asset('/helio/public/assets/sllider/slider.js') }}"></script>
+            <script>
+                var dibujarModal = function() {
+                    var input = $("<input/>", {type: "checkbox", id: "cerrar"});
+                    var label = $("<label/>", {id:"btn-cerrar"});
+                    var modalInicial = $("<div/>", {class: "modalInicial"});
+                    var contenido = $("<div/>", {class: "contenido"});
+                    var h2 = $("<h2/>");
+                    var img = $("<img/>", {src: "/helio/public/img/logo.png"});
+                    var main = $("<main/>");
+                    var h1 = $("<h2/>");
+                    var p = $("<p/>");
+                    var modal = $("<div/>", {id: "modal-inicial"});
+                    contenido.append(label, h2, img);
+                    modalInicial.append(contenido);
+                    main.append(h1, p);
+                    modal.append(input, modalInicial, main);
+                    label.text("CERRAR");
+                    h2.text("Visita nuestro blog");
+                    h1.text("Ventana modal con HTML y CSS");
+                    var texto = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea eaque eius molestias quibusdam saepe tenetur! Accusantium at consectetur dolore ducimus illo ipsa minus possimus, sapiente! Beatae quae quisquam rerum?";
+                    p.text(texto);
+                    var cerrar = function() {
+                        modal.fadeOut(function() {
+                            modal.remove();
+                            if(Storage !== undefined) {
+                                sessionStorage.setItem("informacion-modal-visualizada", true);
+                            }
+                        });
+                    };
+                    label.click(function() {
+                        cerrar();
+                    });
+                    $("body").append(modal);
+                };
+
+                window.onload = function() {
+                    if(Storage !== undefined) {
+                        if(!sessionStorage.getItem("informacion-modal-visualizada")) {
+                            dibujarModal();
+                        }
+                    }
+                };
+            </script>
         {% endblock %}
     </body>
 </html>
