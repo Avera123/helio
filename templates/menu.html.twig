@@ -3,13 +3,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <p>Innovación y Avance</p>
+                    <ul class="list-inline pull-left">
+                        <li>Innovación y Avance</li>
+                        <li><a href="http://192.168.15.100/oro/public/index.php" target="_blank"><img src="/helio/public/img/logoOro.png" style="width: 45px;float: left;padding: 0px;" alt=""></a>
+                        </li><span><strong>|</strong></span>
+                        <li><a href="http://mercurio.appsoga.com/index.php" target="_blank"><img src="/helio/public/img/mercurio250.png" style="width: 43px;float: left;padding: 0px;"
+                                            alt=""></a></li>
+                    </ul>
                 </div>
                 <div class="col-sm-6">
                     <ul class="list-inline pull-right">
-                        <li><a href="https://www.facebook.com/App-Soga-SAS-653767021474083/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/App-Soga-SAS-653767021474083/" target="_blank"><i
+                                        class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/AppSoga" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/appsoga/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.instagram.com/appsoga/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </li>
                         <li><a href="#"><i class="fa fa-envelope-o"></i></a></li>
                         <li><a href="tel:+(57)(4) 322 0771"><i class="fa fa-phone"></i> +(57)(4) 322 0771</a></li>
                         <li>Medellín - Colombia</li>
@@ -20,7 +28,8 @@
     </div>
     <nav class="navbar navbar-default">
         <div class="container">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-navbar-collapse">
                 <span class="sr-only">Toggle Navigation</span>
                 <i class="fa fa-bars"></i>
             </button>
@@ -30,21 +39,28 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse">
                 <ul class="nav navbar-nav main-navbar-nav">
-                    <li class="{% if app.request.attributes.get('_route') == 'inicio' %}active{% endif %}"><a href="{{ path('inicio') }}" title="Volver al Inicio">INICIO</a></li>
-                    <li class="{% if app.request.attributes.get('_route') == 'quienes-somos' %}active{% endif %}"><a href="{{ path('quienes_somos') }}" title="">¿QUIENES SOMOS?</a></li>
+                    <li class="{% if app.request.attributes.get('_route') == 'inicio' %}active{% endif %}"><a
+                                href="{{ path('inicio') }}" title="Volver al Inicio">INICIO</a></li>
+                    <li class="{% if app.request.attributes.get('_route') == 'quienes-somos' %}active{% endif %}"><a
+                                href="{{ path('quienes_somos') }}" title="">¿QUIENES SOMOS?</a></li>
                     {#<li class="{% if app.request.attributes.get('_route') == 'cliente' %}active{% endif %}"><a href="{{ path('cliente') }}" title="">CLIENTE</a></li>#}
-                    <li class="{% if app.request.attributes.get('_route') == 'producto' %}active{% endif %}"><a href="{{ path('producto') }}" title="Productos">PRODUCTOS</a></li>
+                    <li class="{% if app.request.attributes.get('_route') == 'producto' %}active{% endif %}"><a
+                                href="{{ path('producto') }}" title="Productos">PRODUCTOS</a></li>
                     <li class="dropdown">
-                        <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DOCUMENTACIÓN<span class="caret"></span></a>
+                        <a href="#" title="" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                           aria-haspopup="true" aria-expanded="false">DOCUMENTACIÓN<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li class="{% if app.request.attributes.get('_route') == 'commitSoga' %}active{% endif %}"><a href="{{ path('commitSoga') }}" title="Actualizaciones">ACTUALIZACIONES</a></li>
+                            <li class="{% if app.request.attributes.get('_route') == 'commitSoga' %}active{% endif %}">
+                                <a href="{{ path('commitSoga') }}" title="Actualizaciones">ACTUALIZACIONES</a></li>
                             {#<li><a href="#" title="">SUB MENU 1</a></li>#}
                             {#<li><a href="#" title="">SUB MENU 2</a></li>#}
                             {#<li><a href="#" title="">SUB MENU 3</a></li>#}
                         </ul>
                     </li>
-                    <li class="{% if app.request.attributes.get('_route') == 'acceso' %}active{% endif %}"><a href="{{ path('acceso') }}" title="">ACCESO</a></li>
-                    <li class="{% if app.request.attributes.get('_route') == 'contacto' %}active{% endif %}"><a href="{{ path('contacto') }}" title="">CONTACTO</a></li>
+                    <li class="{% if app.request.attributes.get('_route') == 'acceso' %}active{% endif %}"><a
+                                href="{{ path('acceso') }}" title="">ACCESO</a></li>
+                    <li class="{% if app.request.attributes.get('_route') == 'contacto' %}active{% endif %}"><a
+                                href="{{ path('contacto') }}" title="">CONTACTO</a></li>
                     {#{{ dump(app.request.attributes.get('_route')) }}#}
                 </ul>
             </div><!-- /.navbar-collapse -->
